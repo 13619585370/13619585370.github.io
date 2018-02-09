@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/02/09/Java-web-的深入分析/index.html">
 <meta property="og:site_name" content="沉默De百科">
 <meta property="og:description" content="Java Web 中的请求服务架构 C/S 架构C/S架构就是我们常见的客户端/服务器架构，优点就是能够充分发挥客户端PC的处理能力，很多工作都可以在客户端进行处理然后提交到服务器端，客户端响应速度快，具体优点有：（1）、应用服务器运行数据负荷较轻。（2）、数据的存储管理功能较为透明。  B/S架构B/S架构就是浏览器/服务器架构。通常服务端都是基于HTTP请求的，基于Http的服务器有很多：Ap">
-<meta property="og:updated_time" content="2018-02-09T05:49:24.046Z">
+<meta property="og:updated_time" content="2018-02-09T06:18:24.750Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java web 的深入分析">
 <meta name="twitter:description" content="Java Web 中的请求服务架构 C/S 架构C/S架构就是我们常见的客户端/服务器架构，优点就是能够充分发挥客户端PC的处理能力，很多工作都可以在客户端进行处理然后提交到服务器端，客户端响应速度快，具体优点有：（1）、应用服务器运行数据负荷较轻。（2）、数据的存储管理功能较为透明。  B/S架构B/S架构就是浏览器/服务器架构。通常服务端都是基于HTTP请求的，基于Http的服务器有很多：Ap">
@@ -352,7 +352,8 @@
         <h2 id="Java-Web-中的请求"><a href="#Java-Web-中的请求" class="headerlink" title="Java Web 中的请求"></a>Java Web 中的请求</h2><h3 id="服务架构"><a href="#服务架构" class="headerlink" title="服务架构"></a>服务架构</h3><ol>
 <li><p>C/S 架构<br>C/S架构就是我们常见的客户端/服务器架构，优点就是能够充分发挥客户端PC的处理能力，很多工作都可以在客户端进行处理<br>然后提交到服务器端，客户端响应速度快，具体优点有：<br>（1）、应用服务器运行数据负荷较轻。<br>（2）、数据的存储管理功能较为透明。</p>
 </li>
-<li><p>B/S架构<br>B/S架构就是浏览器/服务器架构。通常服务端都是基于HTTP请求的，基于Http的服务器有很多：Apache、IIS、Nginx、Tomcat、<br>JBoss等。</p>
+<li><p>B/S架构<br>B/S架构就是浏览器/服务器架构。通常服务端都是基于HTTP请求的，基于Http的服务器有很多：Apache、IIS、Nginx、Tomcat、<br>JBoss等。<br>HTTP采用无状态的短连接的通信方式，通常情况下，一次请求就完成一次数据交互，也对应一个业务逻辑。通讯完成之后就会断开<br>连接，不可能一直连接下去。</p>
+<p>解析URL地址的过程：当用户输入一个url的时候，首先是DNS会将这个url解析成相应的IP地址，然后会根据这个IP地址找到相应的<br>服务器，向这个服务器提交一个get请求，有这个服务器决定返回默认的数据资源给这个用户。</p>
 </li>
 </ol>
 
@@ -413,7 +414,7 @@
         <p><span>本文标题:</span><a href="/2018/02/09/Java-web-的深入分析/">Java web 的深入分析</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 马百科 的个人博客">马百科</a></p>
         <p><span>发布时间:</span>2018年02月09日 - 13时31分</p>
-        <p><span>最后更新:</span>2018年02月09日 - 13时49分</p>
+        <p><span>最后更新:</span>2018年02月09日 - 14时18分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/02/09/Java-web-的深入分析/" title="Java web 的深入分析">http://yoursite.com/2018/02/09/Java-web-的深入分析/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/02/09/Java-web-的深入分析/　　作者: 马百科" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
