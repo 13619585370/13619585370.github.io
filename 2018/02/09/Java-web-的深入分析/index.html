@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/02/09/Java-web-的深入分析/index.html">
 <meta property="og:site_name" content="沉默De百科">
 <meta property="og:description" content="Java Web 中的请求服务架构 C/S 架构C/S架构就是我们常见的客户端/服务器架构，优点就是能够充分发挥客户端PC的处理能力，很多工作都可以在客户端进行处理然后提交到服务器端，客户端响应速度快，具体优点有：（1）、应用服务器运行数据负荷较轻。（2）、数据的存储管理功能较为透明。  B/S架构B/S架构就是浏览器/服务器架构。通常服务端都是基于HTTP请求的，基于Http的服务器有很多：Ap">
-<meta property="og:updated_time" content="2018-02-09T06:18:24.750Z">
+<meta property="og:updated_time" content="2018-02-09T09:34:05.540Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java web 的深入分析">
 <meta name="twitter:description" content="Java Web 中的请求服务架构 C/S 架构C/S架构就是我们常见的客户端/服务器架构，优点就是能够充分发挥客户端PC的处理能力，很多工作都可以在客户端进行处理然后提交到服务器端，客户端响应速度快，具体优点有：（1）、应用服务器运行数据负荷较轻。（2）、数据的存储管理功能较为透明。  B/S架构B/S架构就是浏览器/服务器架构。通常服务端都是基于HTTP请求的，基于Http的服务器有很多：Ap">
@@ -356,7 +356,8 @@
 <p>解析URL地址的过程：当用户输入一个url的时候，首先是DNS会将这个url解析成相应的IP地址，然后会根据这个IP地址找到相应的<br>服务器，向这个服务器提交一个get请求，有这个服务器决定返回默认的数据资源给这个用户。</p>
 </li>
 </ol>
-
+<h3 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h3><pre><code>就是建立在现有网络之上，扩展网络设备和服务器的带宽、增加吞吐量、加强网络数据处理能力、提高网络的灵活性和可用性。
+</code></pre>
       
       
         <div class="page-reward">
@@ -414,7 +415,7 @@
         <p><span>本文标题:</span><a href="/2018/02/09/Java-web-的深入分析/">Java web 的深入分析</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 马百科 的个人博客">马百科</a></p>
         <p><span>发布时间:</span>2018年02月09日 - 13时31分</p>
-        <p><span>最后更新:</span>2018年02月09日 - 14时18分</p>
+        <p><span>最后更新:</span>2018年02月09日 - 17时34分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/02/09/Java-web-的深入分析/" title="Java web 的深入分析">http://yoursite.com/2018/02/09/Java-web-的深入分析/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/02/09/Java-web-的深入分析/　　作者: 马百科" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -431,8 +432,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2018/02/02/React/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">React</div>
+    <a href="/2018/02/09/Java面试准备/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java面试准备</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -443,7 +444,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java-Web-中的请求"><span class="toc-number">1.</span> <span class="toc-text">Java Web 中的请求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#服务架构"><span class="toc-number">1.1.</span> <span class="toc-text">服务架构</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java-Web-中的请求"><span class="toc-number">1.</span> <span class="toc-text">Java Web 中的请求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#服务架构"><span class="toc-number">1.1.</span> <span class="toc-text">服务架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#负载均衡"><span class="toc-number">1.2.</span> <span class="toc-text">负载均衡</span></a></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -514,12 +515,12 @@
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2018/02/02/React/" title="下一篇: React">
+            <a href="/2018/02/09/Java面试准备/" title="下一篇: Java面试准备">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/02/09/Java-web-的深入分析/">Java web 的深入分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/02/React/">React</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/02/Spring-Boot/">Spring Boot</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/02/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/02/09/Java-web-的深入分析/">Java web 的深入分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/09/Java面试准备/">Java面试准备</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/02/React/">React</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/02/Spring-Boot/">Spring Boot</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/02/hello-world/">Hello World</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
