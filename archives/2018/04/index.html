@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   
-  <title>沉默De百科</title>
+  <title>Archives: 2018/4 | 沉默De百科</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="沉默De百科">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2018/04/index.html">
 <meta property="og:site_name" content="沉默De百科">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="沉默De百科">
@@ -24,9 +24,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -38,9 +35,9 @@
           rootUrl: '/',
           fancybox: true,
           animate: true,
-          isHome: true,
+          isHome: false,
           isPost: false,
-          isArchive: false,
+          isArchive: true,
           isTag: false,
           isCategory: false,
           open_in_new: false
@@ -316,305 +313,48 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-Java面试准备" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2018/04/01/Java面试准备/" class="article-date">
-      <time datetime="2018-04-01T05:31:48.000Z" itemprop="datePublished">2018-04-01</time>
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+          <div class="article-meta">
+              <a href="/2018/04/01/Java面试准备/" class="archive-article-date">
+      <time datetime="2018-04-01T05:31:48.000Z" itemprop="datePublished">04-01</time>
 </a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
+        </div>
+         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/01/Java面试准备/">Java面试准备</a>
+      <a class="archive-article-title" href="/2018/04/01/Java面试准备/">Java面试准备</a>
     </h1>
   
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+        <div class="article-info info-on-archive">
           
-        
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
 
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Java-web-的深入分析" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/02/09/Java-web-的深入分析/" class="article-date">
-      <time datetime="2018-02-09T05:31:48.000Z" itemprop="datePublished">2018-02-09</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/09/Java-web-的深入分析/">Java web 的深入分析</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
           
-        <h2 id="Java-Web-中的请求"><a href="#Java-Web-中的请求" class="headerlink" title="Java Web 中的请求"></a>Java Web 中的请求</h2><h3 id="服务架构"><a href="#服务架构" class="headerlink" title="服务架构"></a>服务架构</h3><ol>
-<li><p>C/S 架构<br>C/S架构就是我们常见的客户端/服务器架构，优点就是能够充分发挥客户端PC的处理能力，很多工作都可以在客户端进行处理<br>然后提交到服务器端，客户端响应速度快，具体优点有：<br>（1）、应用服务器运行数据负荷较轻。<br>（2）、数据的存储管理功能较为透明。</p>
-</li>
-<li><p>B/S架构<br>B/S架构就是浏览器/服务器架构。通常服务端都是基于HTTP请求的，基于Http的服务器有很多：Apache、IIS、Nginx、Tomcat、<br>JBoss等。<br>HTTP采用无状态的短连接的通信方式，通常情况下，一次请求就完成一次数据交互，也对应一个业务逻辑。通讯完成之后就会断开<br>连接，不可能一直连接下去。</p>
-<p>解析URL地址的过程：当用户输入一个url的时候，首先是DNS会将这个url解析成相应的IP地址，然后会根据这个IP地址找到相应的<br>服务器，向这个服务器提交一个get请求，有这个服务器决定返回默认的数据资源给这个用户。</p>
-</li>
-</ol>
-<h3 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h3><pre><code>就是建立在现有网络之上，扩展网络设备和服务器的带宽、增加吞吐量、加强网络数据处理能力、提高网络的灵活性和可用性。
-</code></pre>
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
-  
 </article>
-
-
-
-
-
-
-
-
-
   
-    <article id="post-React" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2018/02/02/React/" class="article-date">
-      <time datetime="2018-02-02T10:59:43.000Z" itemprop="datePublished">2018-02-02</time>
-</a>
-    </div>
+    </div></section>
   
-  <div class="article-inner">
+
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/02/React/">React</a>
-    </h1>
-  
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="React入门介绍"><a href="#React入门介绍" class="headerlink" title="React入门介绍"></a>React入门介绍</h2><p>首先，React是一个用于构建用户界面的Javascript库,但Peact并不是一套完整的MVC或MVVM的框架，它仅涵盖V-view视图层。JSX是javascript的扩展，像Typescript,coffeeScript等一样，都是Javascript的语法糖，最终都要变编译成JS执行，建议使用JSX的代码进行React的开发。因为Javascript代码与JSX代码并不兼容，凡是使用JSX的地方我们都需要加上 type=”text/babel”。</p>
-<h3 id="React三个必备库-—-react-js-react-dom-js-browser-min-js"><a href="#React三个必备库-—-react-js-react-dom-js-browser-min-js" class="headerlink" title="React三个必备库 — react.js/react-dom.js/browser.min.js"></a>React三个必备库 — react.js/react-dom.js/browser.min.js</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;script src=<span class="string">"../../react.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=<span class="string">"../../react-dom.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=<span class="string">"../../browser.min.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="JSX比较特殊的是允许Javascript和HTML的混写，看一个简单的例子"><a href="#JSX比较特殊的是允许Javascript和HTML的混写，看一个简单的例子" class="headerlink" title="JSX比较特殊的是允许Javascript和HTML的混写，看一个简单的例子   :"></a>JSX比较特殊的是允许Javascript和HTML的混写，看一个简单的例子   :</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;div id=<span class="string">"container"</span>&gt;&lt;/div&gt;</span><br><span class="line">	    &lt;script <span class="built_in">type</span>=<span class="string">"text/babel"</span>&gt;</span><br><span class="line">		    <span class="built_in">let</span> value = <span class="string">"demo1"</span>;</span><br><span class="line">		    <span class="built_in">let</span> buttonName = <span class="string">"submit"</span>;</span><br><span class="line">		      ReactDOM.render(</span><br><span class="line">		        &lt;div&gt;</span><br><span class="line">		          &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> value=&#123;value&#125;/&gt; //注意单标签一定要闭合“/”,否则会报错</span><br><span class="line">		          &lt;button&gt;&#123;buttonName&#125;&lt;/button&gt;//在&#123;&#125;中插入变量</span><br><span class="line">		        &lt;/div&gt;,</span><br><span class="line">		        document.getElementById(<span class="string">"container"</span>)</span><br><span class="line">		      )</span><br><span class="line">	    &lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="ReactDOM-render是React的最基本方法用于将模板转为HTML语言，并插入指定的DOM节点。ReactDOM-render-template-targetDOM-该方法接收两个参数：第一个是创建的模板，多个dom元素外层需使用一个标签进行包裹，如；第二个参数是插入该模板的目标位置。若要为创建的某个元素增加class属性，不能直接定义class而要用className，因为class是javascript中的保留字。例如给input添加className并更改样式："><a href="#ReactDOM-render是React的最基本方法用于将模板转为HTML语言，并插入指定的DOM节点。ReactDOM-render-template-targetDOM-该方法接收两个参数：第一个是创建的模板，多个dom元素外层需使用一个标签进行包裹，如；第二个参数是插入该模板的目标位置。若要为创建的某个元素增加class属性，不能直接定义class而要用className，因为class是javascript中的保留字。例如给input添加className并更改样式：" class="headerlink" title="ReactDOM.render是React的最基本方法用于将模板转为HTML语言，并插入指定的DOM节点。ReactDOM.render(template,targetDOM),该方法接收两个参数：第一个是创建的模板，多个dom元素外层需使用一个标签进行包裹，如；第二个参数是插入该模板的目标位置。若要为创建的某个元素增加class属性，不能直接定义class而要用className，因为class是javascript中的保留字。例如给input添加className并更改样式："></a>ReactDOM.render是React的最基本方法用于将模板转为HTML语言，并插入指定的DOM节点。ReactDOM.render(template,targetDOM),该方法接收两个参数：第一个是创建的模板，多个dom元素外层需使用一个标签进行包裹，如<div>；第二个参数是插入该模板的目标位置。若要为创建的某个元素增加class属性，不能直接定义class而要用className，因为class是javascript中的保留字。例如给input添加className并更改样式：</div></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">	&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> className=<span class="string">"userName"</span> value=&#123;value&#125;/&gt; </span><br><span class="line">	    .userName&#123;background: yellow&#125;//在CSS样式中定义</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="React完整例子-es6写法"><a href="#React完整例子-es6写法" class="headerlink" title="React完整例子 es6写法"></a>React完整例子 es6写法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import React from <span class="string">'react'</span>;</span><br><span class="line">import ReactDom from <span class="string">'react-dom'</span>;</span><br><span class="line">class Demo extends React.Component&#123;</span><br><span class="line">	<span class="function"><span class="title">render</span></span>()&#123;</span><br><span class="line">		<span class="built_in">return</span>(</span><br><span class="line">			&lt;!-- 只允许有一个最外层标签，不能并列使用 --&gt;</span><br><span class="line">			&lt;div&gt;</span><br><span class="line">				内容</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">ReactDom.render(&lt;Demo /&gt;,document.getElementById(<span class="string">'root'</span>));</span><br></pre></td></tr></table></figure>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Spring-Boot" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/02/02/Spring-Boot/" class="article-date">
-      <time datetime="2018-02-02T09:14:39.000Z" itemprop="datePublished">2018-02-02</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/02/Spring-Boot/">Spring Boot</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="Spring-boot的特点："><a href="#Spring-boot的特点：" class="headerlink" title="Spring boot的特点："></a>Spring boot的特点：</h3><p>1.创建独立的Spring应用程序<br>2.嵌入的Tomcat,无需配置war文件<br>3.简化Maven配置<br>4.自动配置Spring<br>5.提供生产就绪功能，<br>6.绝对没有代码生成和对XML没有要求配置</p>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/02/02/hello-world/" class="article-date">
-      <time datetime="2018-02-02T08:53:34.158Z" itemprop="datePublished">2018-02-02</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/02/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <!-- Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
-
-## Quick Start
-
-### Create a new post
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a> –&gt;</p>
--->
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-  
 </div>
       <footer id="footer">
     <div class="outer">
@@ -676,6 +416,17 @@
         };
     })
 </script>
+
+    <button class="hide-labels">TAG 开关</button>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $(".article-info").toggle(200);
+            });
+        });
+    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
