@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Java面试准备--JavaSE基础之Java内部类 | 沉默De百科</title>
+  <title>Java面试准备--JavaSE基础之Java集合 | 沉默De百科</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JavaSE基础Java内部类 静态嵌套类（ Static Nested     Class）和内部类 （Inner Class）的区别 ? 静态内部类 ：是被声明为静态的内部类，它可以不依靠外部类的实例被实例化。 内部类：需要在外部类实例化后才能实例化。      注意 Java 中非静态内部类对象的创建要依赖其外部类对象，上面的面试题中 foo 和 main 方法都是静态方法，静态方法中没有">
+  <meta name="description" content="JavaSE基础Java集合 HashMap 排序题（面试题） 已知一个 HashMap集合， User 有 name（String）和 age（int）属性。请写一个方法实现对 HashMap 的排序功能，该方法接收 HashMap为形参，返回类型为 HashMap， 要求对 HashMap 中的 User 的 age 倒序进行排序。排序时 key=value 键值对不得拆散。 解题思路：因为H">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java面试准备--JavaSE基础之Java内部类">
-<meta property="og:url" content="http://yoursite.com/2018/04/01/Java面试准备/index.html">
+<meta property="og:title" content="Java面试准备--JavaSE基础之Java集合">
+<meta property="og:url" content="http://yoursite.com/2018/04/11/Java面试准备--JavaSE基础之Java集合/index.html">
 <meta property="og:site_name" content="沉默De百科">
-<meta property="og:description" content="JavaSE基础Java内部类 静态嵌套类（ Static Nested     Class）和内部类 （Inner Class）的区别 ? 静态内部类 ：是被声明为静态的内部类，它可以不依靠外部类的实例被实例化。 内部类：需要在外部类实例化后才能实例化。      注意 Java 中非静态内部类对象的创建要依赖其外部类对象，上面的面试题中 foo 和 main 方法都是静态方法，静态方法中没有">
-<meta property="og:updated_time" content="2018-04-10T09:49:03.465Z">
+<meta property="og:description" content="JavaSE基础Java集合 HashMap 排序题（面试题） 已知一个 HashMap集合， User 有 name（String）和 age（int）属性。请写一个方法实现对 HashMap 的排序功能，该方法接收 HashMap为形参，返回类型为 HashMap， 要求对 HashMap 中的 User 的 age 倒序进行排序。排序时 key=value 键值对不得拆散。 解题思路：因为H">
+<meta property="og:updated_time" content="2018-04-11T05:32:32.556Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java面试准备--JavaSE基础之Java内部类">
-<meta name="twitter:description" content="JavaSE基础Java内部类 静态嵌套类（ Static Nested     Class）和内部类 （Inner Class）的区别 ? 静态内部类 ：是被声明为静态的内部类，它可以不依靠外部类的实例被实例化。 内部类：需要在外部类实例化后才能实例化。      注意 Java 中非静态内部类对象的创建要依赖其外部类对象，上面的面试题中 foo 和 main 方法都是静态方法，静态方法中没有">
+<meta name="twitter:title" content="Java面试准备--JavaSE基础之Java集合">
+<meta name="twitter:description" content="JavaSE基础Java集合 HashMap 排序题（面试题） 已知一个 HashMap集合， User 有 name（String）和 age（int）属性。请写一个方法实现对 HashMap 的排序功能，该方法接收 HashMap为形参，返回类型为 HashMap， 要求对 HashMap 中的 User 的 age 倒序进行排序。排序时 key=value 键值对不得拆散。 解题思路：因为H">
   
     <link rel="alternative" href="/atom.xml" title="沉默De百科" type="application/atom+xml">
   
@@ -315,11 +315,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-Java面试准备" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Java面试准备--JavaSE基础之Java集合" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/04/01/Java面试准备/" class="article-date">
-      <time datetime="2018-04-01T05:31:48.000Z" itemprop="datePublished">2018-04-01</time>
+      <a href="/2018/04/11/Java面试准备--JavaSE基础之Java集合/" class="article-date">
+      <time datetime="2018-04-11T01:31:48.000Z" itemprop="datePublished">2018-04-11</time>
 </a>
     </div>
   
@@ -332,7 +332,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Java面试准备--JavaSE基础之Java内部类
+      Java面试准备--JavaSE基础之Java集合
     </h1>
   
 
@@ -349,10 +349,35 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="JavaSE基础"><a href="#JavaSE基础" class="headerlink" title="JavaSE基础"></a>JavaSE基础</h2><h3 id="Java内部类"><a href="#Java内部类" class="headerlink" title="Java内部类"></a>Java内部类</h3><ol>
-<li><p>静态嵌套类（ Static Nested     Class）和内部类 （Inner Class）的区别 ?<br> 静态内部类 ：是被声明为静态的内部类，它可以不依靠外部类的实例被实例化。<br> 内部类：需要在外部类实例化后才能实例化。    </p>
+        <h2 id="JavaSE基础"><a href="#JavaSE基础" class="headerlink" title="JavaSE基础"></a>JavaSE基础</h2><h3 id="Java集合"><a href="#Java集合" class="headerlink" title="Java集合"></a>Java集合</h3><ol>
+<li><p>HashMap 排序题（面试题）<br> 已知一个 HashMap<integer， user="">集合， User 有 name（String）和 age（int）属性。请写一个方法实现对<br> HashMap 的排序功能，该方法接收 HashMap<integer， user="">为形参，返回类型为 HashMap<integer， user="">，<br> 要求对 HashMap 中的 User 的 age 倒序进行排序。排序时 key=value 键值对不得拆散。<br> 解题思路：因为HashMap本身就是不可以排序的，但是他的子类LinkedHashMap的结构是有序的所以</integer，></integer，></integer，></p>
+<pre><code>（1）、首先我们获取到Map集合的键值对存储到Set集合中。
+（2）、将Set集合转化为List集合。
+（3）、可以使用工具类Collections中的排序方法进行排序
+（4）、排序之后在存储到一个新的有序的LinkedHashMap集合中
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">public class HashMapTest &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		HashMap&lt;Integer,User&gt; users = new HashMap&lt;&gt;();</span><br><span class="line">		users.put(1, new User(<span class="string">"张三"</span>, 15));</span><br><span class="line">		users.put(2, new User(<span class="string">"李四"</span>, 13));</span><br><span class="line">		users.put(3, new User(<span class="string">"王五"</span>, 22));</span><br><span class="line">		users.put(4, new User(<span class="string">"小马"</span>, 26));</span><br><span class="line">		</span><br><span class="line">		System.out.println(users);</span><br><span class="line">		</span><br><span class="line">		HashMap&lt;Integer,User&gt; sortHashMap =sortHashMap(users); </span><br><span class="line">		System.out.println(sortHashMap);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	private static HashMap&lt;Integer, User&gt; sortHashMap(HashMap&lt;Integer, User&gt; map) &#123;</span><br><span class="line">		//首先拿到map的键值对集合</span><br><span class="line">		Set&lt;Entry&lt;Integer,User&gt;&gt; entrySet = map.entrySet();</span><br><span class="line">		</span><br><span class="line">		//将<span class="built_in">set</span>集合转化为List集合，目的就是为了使用工具类的排序方法</span><br><span class="line">		List&lt;Entry&lt;Integer, User&gt;&gt; list = new ArrayList&lt;Entry&lt;Integer,User&gt;&gt;(entrySet);</span><br><span class="line">		</span><br><span class="line">		//使用Collections集合工具类对list进行排序，排序规则使用匿名内部类实现</span><br><span class="line">		Collections.sort(list, new Comparator&lt;Entry&lt;Integer, User&gt;&gt;() &#123;</span><br><span class="line">			@Override</span><br><span class="line">			public int compare(Entry&lt;Integer, User&gt; o1, Entry&lt;Integer, User&gt; o2) &#123;</span><br><span class="line">				//按照要求根据user的年龄倒序进行排列</span><br><span class="line">				<span class="built_in">return</span> o2.getValue().getAge()-o1.getValue().getAge();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br><span class="line">		</span><br><span class="line">		//创建一个新的有序的HashMap子类的集合</span><br><span class="line">		LinkedHashMap&lt;Integer, User&gt; linkedHashMap = new LinkedHashMap&lt;Integer, User&gt;();</span><br><span class="line">		//将list中的值存储都LinkedHashMap中</span><br><span class="line">		<span class="keyword">for</span> (Entry&lt;Integer, User&gt; entry : list) &#123;</span><br><span class="line">			linkedHashMap.put(entry.getKey(), entry.getValue());</span><br><span class="line">		&#125;</span><br><span class="line">		//返回结果</span><br><span class="line">		<span class="built_in">return</span> linkedHashMap;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>注意<br> Java 中非静态内部类对象的创建要依赖其外部类对象，上面的面试题中 foo 和 main 方法都是静态方<br>法，静态方法中没有 this，也就是说没有所谓的外部类对象，因此无法创建内部类对象，如果要在静态方法中创建内<br>部类对象，可以这样做 new outer().new Inner()</p>
+<li><p>集合的安全性问题<br> ArrayLsit、HashSet、HashMap是线程安全的吗？不是线程安全的<br> 在集合中，Vector和HashTable是线程安全的，他们都是在相关核心的方法上加上了synchronized 关键字。<br> Collections 工具类提供了相关的 API，可以让上面那 3 个不安全的集合变为安全的。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Collections.synchronizedCollection(collection);</span><br><span class="line">Collections.synchronizedList(list);</span><br><span class="line">Collections.synchronizedMap(hashMap);</span><br><span class="line">Collections.synchronizedSet(hashSet);</span><br></pre></td></tr></table></figure>
+<p> 实现原理就是在集合的核心方法上加上synchronized 关键字。</p>
+</li>
+<li><p>ArrayList的内部实现<br> ArrayList内部是用Object[]实现的。接下来我们分别分析 ArrayList 的构造、 add、 remove、 clear 方法的实现<br>原理<br> （一）、构造函数 </p>
+<pre><code>1. 空参构造函数
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public <span class="function"><span class="title">ArrayList</span></span>() &#123;</span><br><span class="line">	array = EmptyArray.OBJECT;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>array 是一个 Object[]类型。当我们 new 一个空参构造时系统调用了 EmptyArray.OBJECT 属性， EmptyArray 仅
+</code></pre><p> 仅是一个系统的类库，该类源码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public final class EmptyArray &#123;</span><br><span class="line">	private <span class="function"><span class="title">EmptyArray</span></span>() &#123;&#125;</span><br><span class="line">	public static final boolean[] BOOLEAN = new boolean[0];</span><br><span class="line">	public static final byte[] BYTE = new byte[0];</span><br><span class="line">	public static final char[] CHAR = new char[0];</span><br><span class="line">	public static final double[] DOUBLE = new double[0];</span><br><span class="line">	public static final int[] INT = new int[0];</span><br><span class="line">	public static final Class&lt;?&gt;[] CLASS = new Class[0];</span><br><span class="line">	public static final Object[] OBJECT = new Object[0];</span><br><span class="line">	public static final String[] STRING = new String[0];</span><br><span class="line">	public static final Throwable[] THROWABLE = new Throwable[0];</span><br><span class="line">	public static final StackTraceElement[] STACK_TRACE_ELEMENT = new StackTraceElement[0];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 也就是说当我们new一个空参 ArrayList 的时候，系统内部使用了一个 new Object[0]数组。<br> (二)、add方法</p>
+<pre><code>add方法有两个重载
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//源码</span><br><span class="line">@Override </span><br><span class="line">public boolean add(E object) &#123;</span><br><span class="line">	Object[] a = array;</span><br><span class="line">	int s = size;</span><br><span class="line">	<span class="keyword">if</span> (s == a.length) &#123;</span><br><span class="line">		Object[] newArray = new Object[s +</span><br><span class="line">		(s &lt; (MIN_CAPACITY_INCREMENT / 2) ?</span><br><span class="line">		MIN_CAPACITY_INCREMENT : s &gt;&gt; 1)];</span><br><span class="line">		System.arraycopy(a, 0, newArray, 0, s);</span><br><span class="line">		array = a = newArray;</span><br><span class="line">	&#125;</span><br><span class="line">	a[s] = object;</span><br><span class="line">	size = s + 1;</span><br><span class="line">	modCount++;</span><br><span class="line">	<span class="built_in">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>首先将成员变量 array 赋值给局部变量 a，将成员变量 size 赋值给局部变量 s</li>
+<li>判断集合的长度s是否等于数组的长度（如果集合的长度已经等于数组的长度了，说明数组已经满了，该重新分配新数组了）<br> ， 重新分配数组的时候需要计算新分配内存的空间大小，如果当前的长度小于MIN_CAPACITY_INCREMENT/2（这个常量值是 12，除以 2 就是 6，也就是如果当前集合长度小于 6）则分配 12 个长度如果集合长度大于 6 则分配当前长度 s 的一半长度。这里面用到了三元运算符和位运算， s &gt;&gt; 1，意思就是将s 往右移 1 位，相当于 s=s/2，只不过位运算是效率最高的运算。</li>
+<li>将新添加的 object 对象作为数组的 a[s]个元素。</li>
+<li>修改集合长度 size 为 s+1</li>
+<li>modCotun++,该变量是父类中声明的，用于记录集合修改的次数，记录集合修改的次数是为了防止在用迭代器迭代集合时避免并发<br>修改异常，或者说用于判断是否出现并发修改异常的。</li>
+<li>return true，这个返回值意义不大，因为一直返回 true，除非报了一个运行时异常。<br>(三)、remove方法<br>remove 方法有两个重载，我们只研究 remove（int index）方法。</li>
+</ol>
 </li>
 </ol>
 
@@ -410,13 +435,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/04/01/Java面试准备/">Java面试准备--JavaSE基础之Java内部类</a></p>
+        <p><span>本文标题:</span><a href="/2018/04/11/Java面试准备--JavaSE基础之Java集合/">Java面试准备--JavaSE基础之Java集合</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 马百科 的个人博客">马百科</a></p>
-        <p><span>发布时间:</span>2018年04月01日 - 13时31分</p>
-        <p><span>最后更新:</span>2018年04月10日 - 17时49分</p>
+        <p><span>发布时间:</span>2018年04月11日 - 09时31分</p>
+        <p><span>最后更新:</span>2018年04月11日 - 13时32分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/04/01/Java面试准备/" title="Java面试准备--JavaSE基础之Java内部类">http://yoursite.com/2018/04/01/Java面试准备/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/04/01/Java面试准备/　　作者: 马百科" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/04/11/Java面试准备--JavaSE基础之Java集合/" title="Java面试准备--JavaSE基础之Java集合">http://yoursite.com/2018/04/11/Java面试准备--JavaSE基础之Java集合/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/04/11/Java面试准备--JavaSE基础之Java集合/　　作者: 马百科" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -429,18 +454,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2018/04/10/Java面试准备--JavaSE基础之Java的多线程和并发库/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Java面试准备--JavaSE基础之Java的多线程和并发库
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/02/09/Java-web-的深入分析/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Java web 的深入分析</div>
+    <a href="/2018/04/10/Java面试准备--JavaSE基础之Java的多线程和并发库/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java面试准备--JavaSE基础之Java的多线程和并发库</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -451,7 +467,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaSE基础"><span class="toc-number">1.</span> <span class="toc-text">JavaSE基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Java内部类"><span class="toc-number">1.1.</span> <span class="toc-text">Java内部类</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaSE基础"><span class="toc-number">1.</span> <span class="toc-text">JavaSE基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Java集合"><span class="toc-number">1.1.</span> <span class="toc-text">Java集合</span></a></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -518,13 +534,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/04/10/Java面试准备--JavaSE基础之Java的多线程和并发库/" title="上一篇: Java面试准备--JavaSE基础之Java的多线程和并发库">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2018/02/09/Java-web-的深入分析/" title="下一篇: Java web 的深入分析">
+            <a href="/2018/04/10/Java面试准备--JavaSE基础之Java的多线程和并发库/" title="下一篇: Java面试准备--JavaSE基础之Java的多线程和并发库">
                 <i class="fa fa-angle-right"></i>
             </a>
         
